@@ -1,0 +1,88 @@
+$fonts:Arial, Helvetica, sans-serif;
+
+//Desktop
+.container{
+    width: 1140px;
+    margin: auto;
+}
+.wrapper{
+    
+    margin: 30px auto;
+    h1{
+        font-family: $fonts;
+        font-size: 35px;
+        font-weight: 700;
+    }
+    p{
+        font-family: $fonts;
+    }
+    h3{
+        font-family: $fonts;
+        font-size: 18px;
+        font-weight:bold;
+    }
+}
+section{
+    width: 100%;
+    margin: 0px;
+}
+.usecase-flex > div{
+    width: 30%;
+    margin-bottom: 30px;
+}
+.usecase-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    h3{
+        margin: 0px 0px 15px 0px;
+    }
+    img{
+        margin:0px 15px 10px 0px;
+        width: 45px;
+    }
+}
+//tablet landscape
+@media screen and (min-width: 960px) and (max-width:1199px){  
+    .container{
+        width: 936px;
+    }
+}
+//tablet portrait
+@media screen and (min-width:640px) and (max-width:959px){ 
+    .container{
+        width: 720px;
+    }
+    img{
+        float: left;
+    }
+    .usecase-flex > div{
+        width: 45%;
+    }
+    .usecase-flex > div>p{
+        margin-left: 60px;
+    }
+    .wrapper{
+        padding: 20px;
+    }
+}
+//mobile
+@media screen and (max-width: 639px)  {  
+    .container{
+        width: 100%;
+    }
+    .usecase-flex > div{
+        width:100%;
+    }
+    .usecase-flex > div>p{
+        margin-left: 60px;
+    }
+    img{
+        float: left;
+    }
+    .wrapper{
+        padding: 20px;
+    }
+}
