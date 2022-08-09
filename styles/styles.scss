@@ -5,6 +5,14 @@ $fonts:Arial, Helvetica, sans-serif;
     width: 1140px;
     margin: auto;
 }
+p{
+    font-family: $fonts;
+}
+.read-paper-link{
+    color:#6495ed;
+    font-weight: 700;
+    text-decoration:none;
+}
 .wrapper{
     
     margin: 30px auto;
@@ -12,9 +20,6 @@ $fonts:Arial, Helvetica, sans-serif;
         font-family: $fonts;
         font-size: 35px;
         font-weight: 700;
-    }
-    p{
-        font-family: $fonts;
     }
     h3{
         font-family: $fonts;
@@ -61,7 +66,7 @@ section{
     .usecase-flex > div{
         width: 45%;
     }
-    .usecase-flex > div>p{
+    .usecase-flex > div >p{
         margin-left: 60px;
     }
     .wrapper{
@@ -76,8 +81,12 @@ section{
     .usecase-flex > div{
         width:100%;
     }
-    .usecase-flex > div>p{
-        margin-left: 60px;
+    .usecase-flex {
+        div{
+            p{
+                margin-left: 60px;
+            }
+        }
     }
     img{
         float: left;

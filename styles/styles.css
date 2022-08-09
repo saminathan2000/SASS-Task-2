@@ -3,6 +3,16 @@
   margin: auto;
 }
 
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.read-paper-link {
+  color: #6495ed;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .wrapper {
   margin: 30px auto;
 }
@@ -10,9 +20,6 @@
   font-family: Arial, Helvetica, sans-serif;
   font-size: 35px;
   font-weight: 700;
-}
-.wrapper p {
-  font-family: Arial, Helvetica, sans-serif;
 }
 .wrapper h3 {
   font-family: Arial, Helvetica, sans-serif;
@@ -74,7 +81,7 @@ section {
   .usecase-flex > div {
     width: 100%;
   }
-  .usecase-flex > div > p {
+  .usecase-flex div p {
     margin-left: 60px;
   }
   img {
