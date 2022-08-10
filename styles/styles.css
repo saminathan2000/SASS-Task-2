@@ -4,7 +4,7 @@ body {
 
 .container {
   width: 1140px;
-  margin: 0px auto;
+  padding-top: 15px;
 }
 
 p, span {
@@ -50,9 +50,12 @@ section {
   width: 45px;
   height: 50px;
 }
-.usecase-flex div {
+
+.usecase-flex > div {
   width: 30%;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 960px) and (max-width: 1199px) {
@@ -63,34 +66,20 @@ section {
 @media screen and (min-width: 640px) and (max-width: 959px) {
   .container {
     width: 720px;
-  }
-  img {
-    float: left;
+    padding: 15px;
   }
   .usecase-flex > div {
     width: 45%;
-  }
-  .usecase-flex > div p {
-    margin-left: 60px;
-  }
-  .wrapper {
-    padding: 20px;
+    flex-direction: row;
   }
 }
 @media screen and (max-width: 639px) {
   .container {
     width: 100%;
+    padding: 15px;
   }
   .usecase-flex > div {
     width: 100%;
-  }
-  .usecase-flex div p {
-    margin-left: 60px;
-  }
-  img {
-    float: left;
-  }
-  .wrapper {
-    padding: 20px;
+    flex-direction: row;
   }
 }/*# sourceMappingURL=styles.css.map */
